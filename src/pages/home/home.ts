@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+import { RegistroUsuarioPage } from '../registro-usuario/registro-usuario';
+import { LogueoAplicativoPage } from '../logueo-aplicativo/logueo-aplicativo';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -11,8 +12,14 @@ export class HomePage {
 
   }
 
-  /*launchObjPage(){
-    this.navCtrl.push(ObjPage);
+
+  launcRegistroPage(){
+
+    this.navCtrl.push(RegistroUsuarioPage);
   }
-  <button ion-button block (click)="launchObjPage()">Block Button</button>*/
+
+  launcLogueoPage(){
+
+    this.navCtrl.push(LogueoAplicativoPage);
+  }
 }

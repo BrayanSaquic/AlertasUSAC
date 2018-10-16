@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { SecVehiculoIngresoPage } from '../sec-vehiculo-ingreso/sec-vehiculo-ingreso';
+import { SecVehiculoListadoPage } from '../sec-vehiculo-listado/sec-vehiculo-listado';
+import { SecVehiculoRegistroPage } from '../sec-vehiculo-registro/sec-vehiculo-registro';
+
 /**
  * Generated class for the ObjVehiculosPage page.
  *
@@ -22,4 +26,17 @@ export class ObjVehiculosPage {
     console.log('ionViewDidLoad ObjVehiculosPage');
   }
 
+  launcVehiculoIngresoPage(){
+
+    this.navCtrl.push(SecVehiculoIngresoPage);
+  }
+
+  launcVehiculoListadoPage(){
+
+    this.navCtrl.push(SecVehiculoListadoPage);
+  }
+  launcVehiculoRegistroPage(){
+
+    this.navCtrl.push(SecVehiculoRegistroPage);
+  }
 }

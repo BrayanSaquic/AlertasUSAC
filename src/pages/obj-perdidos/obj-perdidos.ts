@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 import { SecObjetosListadoPage } from '../sec-objetos-listado/sec-objetos-listado';
 import { SecObjetosIngresoPage } from '../sec-objetos-ingreso/sec-objetos-ingreso';
 

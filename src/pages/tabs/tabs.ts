@@ -14,6 +14,7 @@ export class TabsPage {
   tab2Root = ObjPerdidosPage;
   tab3Root = ObjVehiculosPage;
   tab4Root = AlertasClasePage;
+  
   constructor() {
 
   }
