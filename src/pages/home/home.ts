@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  /*launchObjPage(){
+    this.navCtrl.push(ObjPage);
+  }
+  <button ion-button block (click)="launchObjPage()">Block Button</button>*/
 }
