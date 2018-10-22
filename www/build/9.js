@@ -1,14 +1,14 @@
 webpackJsonp([9],{
 
-/***/ 278:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertasClasePageModule", function() { return AlertasClasePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SecClaseAsigCodigoPageModule", function() { return SecClaseAsigCodigoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alertas_clase__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sec_clase_asig_codigo__ = __webpack_require__(102);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AlertasClasePageModule = /** @class */ (function () {
-    function AlertasClasePageModule() {
+var SecClaseAsigCodigoPageModule = /** @class */ (function () {
+    function SecClaseAsigCodigoPageModule() {
     }
-    AlertasClasePageModule = __decorate([
+    SecClaseAsigCodigoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__alertas_clase__["a" /* AlertasClasePage */],
+                __WEBPACK_IMPORTED_MODULE_2__sec_clase_asig_codigo__["a" /* SecClaseAsigCodigoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__alertas_clase__["a" /* AlertasClasePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sec_clase_asig_codigo__["a" /* SecClaseAsigCodigoPage */]),
             ],
         })
-    ], AlertasClasePageModule);
-    return AlertasClasePageModule;
+    ], SecClaseAsigCodigoPageModule);
+    return SecClaseAsigCodigoPageModule;
 }());
 
-//# sourceMappingURL=alertas-clase.module.js.map
+//# sourceMappingURL=sec-clase-asig-codigo.module.js.map
 
 /***/ })
 

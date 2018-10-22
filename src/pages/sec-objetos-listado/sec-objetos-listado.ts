@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+//
+import { HttpProvider } from '../../providers/http/http';
+//
+//import { Http } from '@angular/http';
+//import { map } from 'rxjs/operators';
 
 /**
  * Generated class for the SecObjetosListadoPage page.
@@ -15,11 +20,47 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SecObjetosListadoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  usuarios : any[];
+
+  name : string;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SecObjetosListadoPage');
   }
 
+  cargarUsuarios(){
+    console.log('Entra Segunda Funcion');
+    this.http.loadUsers().subscribe(
+      (res) => {         
+        this.usuarios = res['results'];
+        //console.log(this.usuarios.toString());
+      },
+      (error) =>{
+        console.error(error);
+      }
+    )
+  }
+
+  /*checkName() {
+ 
+    let data = {
+        name: this.name
+    };
+
+    this.http.post('http://45.56.120.17:8080/checkname', data).pipe(
+        map(res => res.json())
+    ).subscribe(response => {
+        console.log('POST Response:', response);
+    });
+
+    this.http.get('http://45.56.120.17:8080/checkname' + this.name).pipe(
+        map(res => res.json())
+    ).subscribe(response => {
+        console.log('GET Response:', response);
+    });
+
+}*/
 }

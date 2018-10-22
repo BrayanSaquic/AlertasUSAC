@@ -1,14 +1,14 @@
 webpackJsonp([4],{
 
-/***/ 284:
+/***/ 301:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SecClaseIngresoPageModule", function() { return SecClaseIngresoPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SecObjetosListadoPageModule", function() { return SecObjetosListadoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sec_clase_ingreso__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sec_objetos_listado__ = __webpack_require__(105);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SecClaseIngresoPageModule = /** @class */ (function () {
-    function SecClaseIngresoPageModule() {
+var SecObjetosListadoPageModule = /** @class */ (function () {
+    function SecObjetosListadoPageModule() {
     }
-    SecClaseIngresoPageModule = __decorate([
+    SecObjetosListadoPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__sec_clase_ingreso__["a" /* SecClaseIngresoPage */],
+                __WEBPACK_IMPORTED_MODULE_2__sec_objetos_listado__["a" /* SecObjetosListadoPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sec_clase_ingreso__["a" /* SecClaseIngresoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__sec_objetos_listado__["a" /* SecObjetosListadoPage */]),
             ],
         })
-    ], SecClaseIngresoPageModule);
-    return SecClaseIngresoPageModule;
+    ], SecObjetosListadoPageModule);
+    return SecObjetosListadoPageModule;
 }());
 
-//# sourceMappingURL=sec-clase-ingreso.module.js.map
+//# sourceMappingURL=sec-objetos-listado.module.js.map
 
 /***/ })
 
