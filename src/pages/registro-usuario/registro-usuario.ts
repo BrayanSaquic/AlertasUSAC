@@ -14,12 +14,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'registro-usuario.html',
 })
 export class RegistroUsuarioPage {
-
+  tabBarElement: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tabBarElement = document.querySelector('.tabbar');
+   
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistroUsuarioPage');
   }
 
+  ionViewWillEnter() {
+    this.tabBarElement.style.display = 'none';  
+   
+  }
 }

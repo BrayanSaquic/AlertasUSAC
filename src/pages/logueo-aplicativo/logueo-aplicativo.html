@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>LogueoAplicativo</ion-title>
+    <ion-title>Iniciar Sesión</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,4 +15,44 @@
 
 <ion-content padding>
 
+    <ion-grid>
+        <ion-row>            
+          <ion-col size="12" size-sm>
+              <ion-item text-wrap>                    
+                  <ion-label position="floating">Nombre de usuario/Correo electrónico</ion-label>                      
+                </ion-item>
+          </ion-col>					
+        </ion-row>
+        <ion-row>            
+          <ion-col size="12" size-sm>
+              <ion-item text-wrap>                    
+                      <ion-input tipe="text"[(ngModel)]="user" placeholder="Usuario/Correo electrónico"></ion-input>                    
+                </ion-item>
+          </ion-col>					
+        </ion-row>
+        <ion-row>            
+            <ion-col size="12" size-sm>
+                <ion-item text-wrap>                    
+                    <ion-label position="floating">Contraseña</ion-label>                      
+                  </ion-item>
+            </ion-col>					
+          </ion-row>
+          <ion-row>            
+            <ion-col size="12" size-sm>
+                <ion-item text-wrap>                    
+                        <ion-input type="password"[(ngModel)]="pass" placeholder="Contraseña"></ion-input>                    
+                  </ion-item>
+            </ion-col>					
+          </ion-row>
+          <ion-row>						
+							<ion-col size="12" size-sm>
+									<ion-col size="12" offset="3" size-sm>
+                      <button ion-button outline (click)="signUp()"  icon-end>
+                          Aceptar
+                          <ion-icon name="md-checkmark-circle-outline"></ion-icon>
+                        </button>
+                  </ion-col>	
+								</ion-col>
+          </ion-row> 
+      </ion-grid>
 </ion-content>

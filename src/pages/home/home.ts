@@ -7,9 +7,9 @@ import { LogueoAplicativoPage } from '../logueo-aplicativo/logueo-aplicativo';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
-  constructor(public navCtrl: NavController) {
-
+  tabBarElement: any;
+  constructor(public navCtrl: NavController) {  
+    this.tabBarElement = document.querySelector('.tabbar');
   }
 
 
@@ -22,4 +22,21 @@ export class HomePage {
 
     this.navCtrl.push(LogueoAplicativoPage);
   }
+  logOutPage(){
+
+    this.navCtrl.popToRoot();
+  }
+
+  ionViewWillEnter() {   
+     
+    this.tabBarElement.style.display = 'none';
+  }
+
+
+
+ /*
+  ionViewWillLeave() {
+    this.tabBarElement.style.display = 'flex';
+  }
+*/
 }
